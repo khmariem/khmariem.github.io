@@ -18,7 +18,7 @@
 }
 
 .text_p {
-  font-family:"Arial"
+  font-family:"Georgia"
 }
 
 .space {
@@ -31,6 +31,12 @@
   margin:0;
   padding:0; 
   height:50px; 
+}
+
+.space2 {
+  margin:0;
+  padding:0; 
+  height:20px; 
 }
 
 .zoom {
