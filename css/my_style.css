@@ -60,6 +60,7 @@
 }
 
 .footer {
+	position:absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -71,6 +72,6 @@
 
 .footer_new{
 	font-size:9px;
-	font-family:"Courier !new";
+	font-family:"Courier new";
 	font-colour:white;
 }
