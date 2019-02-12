@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+
+
 .masthead img{
   width:100%
 }
@@ -14,7 +23,8 @@
 
 
 .text_p {
-  font-family:"Georgia"
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 30px;
 }
 
 .space {
@@ -35,16 +45,24 @@
   height:20px; 
 }
 
-.zoom {
-  padding: 10px;
+.zoom-menu {
+  padding: 0px;
   background-color: none;
   transition: transform .2s;
-  width: 120px;
   height: 30px;
   margin: 0 auto;
 }
 
-.zoom:hover {
+.zoom {
+  padding: 0px;
+  background-color: none;
+  transition: transform .2s;
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.zoom:hover, .zoom-menu:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
@@ -64,6 +82,10 @@ body {
    margin-bottom:60px;   /* Height of the footer */
 }
 
+h3,h1 {
+  font-family: "Baloo", sans-serif;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -80,3 +102,15 @@ body {
 	font-family:"Courier new";
 	font-colour:white;
 }
+
+.div-vid {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.name {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 24px;
+}
+
