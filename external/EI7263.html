@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <meta charset="UTF-8">
+        <title>
+            ROBOTICS
+        </title>
+
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Istok+Web" rel="stylesheet"> 
+        
+        <style>
+
+            .p{
+                font-family: 'Fredoka One', cursive;
+                font-size: 50px;
+                color: rgb(238, 148, 44);
+            }
+
+            .text{
+                font-family: 'Istok Web', sans-serif;
+                font-size: 25px;
+            }
+
+            .center {
+                display: block;
+
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #progress {
+                width: 25%;
+                background-color: whitesmoke;
+
+            }
+
+            #bar {
+                width: 10%;
+                height: 30px;
+                background-color: rgb(238, 148, 44);
+                text-align: center;
+                line-height: 30px;
+                color: white;
+                font-family: 'Fredoka One', cursive;
+                font-size: 125%;
+
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div style="display: none;">
+            <p align="center" class="p" style="padding-top: 25px;">Welcome!  <b>EI7263:</b> Biologically-Inspired Learning for Humanoid Robots</p>
+            <div style="padding-top: 50px;">
+                <p class="text" style="font-size: 35px;">List of useful links:</p>
+                <ul class="text">
+                    <li><a href="http://www.cs.utexas.edu/~todd/cs378/">CS378: Autonomous Intelligent Robotics</a></li>
+                    <li><a href="http://file.ncnynl.com/ros/ros_by_example_v1_indigo.pdf">ROS by example (python)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="iWantYouToDisappear" style="margin:15%;">
+            <img src="robot.png" class="center">
+            <br>
+            <div id="progress" class="center"><div id="bar">10%</div></div>
+        </div>
+        
+        <script>
+
+                function move() {
+                var elem = document.getElementById("bar");   
+                var width = 10;
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (width >= 100) {
+                    clearInterval(id);
+                    } else {
+                    width++; 
+                    elem.style.width = width + '%'; 
+                    elem.innerHTML = width * 1  + '%';
+                    }
+                }
+                }
+    
+                move();   
+                setTimeout(function(){document.querySelector("#iWantYouToDisappear").style.display="none";document.querySelector("div").style.display="block";},2000);
+                                                        
+        </script>
+       
+    </body>
+</html>

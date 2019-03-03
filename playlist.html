@@ -27,24 +27,27 @@
 
 <body>
 <div class="space">
-	<nav class="navbar navbar-expand-sm fixed-top navbar-custom">
+	<nav class="navbar navbar-expand-sm fixed-top navbar-custom name">
 	  <p class="new_p">Mariem</p>
-	  <img src="./imgs/orange.png" class="float-left" height="40" width="40" >
+    <img src="./imgs/orange.png" class="float-left" height="40" width="40" >
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link zoom-menu" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Curriculum</a>
+          <a class="nav-link zoom-menu" href="curriculum.html">Curriculum</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-	    <li class="nav-item">
-          <a class="nav-link" href="skills.html">Skills</a>
+          <a class="nav-link zoom-menu" href="projects.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="playlist.html">Playlist</a>
+          <a class="nav-link zoom-menu" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link zoom-menu" href="notes.html">Notes</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link zoom-menu" href="playlist.html">Playlist</a>
         </li>
       </ul>
     </nav>
@@ -55,9 +58,9 @@
       <div class="col-sm-1 col-md-1 col-lg-1"></div>
       <div class="col-sm-3 col-md-3 col-lg-3">
       <img src="./imgs/me.jpg" class="rounded-circle" class="align-self-start mr-3" height="150" width="150">
-      <h3 class="display-5">Mariem Khlifi</h3>
+      <h3 class="display-5 name">Mariem Khlifi</h3>
       <br>
-      <pre class="display-6">Engineering student from
+      <pre class="display-6" style="font-family: 'Quattrocento Sans', sans-serif;">Engineering student from
 Kairouan Tunisia. My
 journey started in France.</pre>
 	  <div class="col-sm-2 col-md-2 col-lg-2">
@@ -94,16 +97,58 @@ journey started in France.</pre>
 	  </div>
     </div>
 
-    <div class="col-sm-7 col-md-7 col-lg-7">  <h3> Under consruction...</h3></div>
-  <footer class="page-footer footer font-small blue">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 footer_new">
-      <h6>Designed and developed by Mariem Khlifi</h6>
+    <div class="col-sm-7 col-md-7 col-lg-7"> 
+      <h1>Song of the hour</h1>
+      <h3 style="color:#ffa500">Come back for a new song every hour.</h3>
+      <div style="height:150px;"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/l8W6c5Fh3oA" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  class="div-vid" allowfullscreen></iframe>
+      
+      
     </div>
-    <!-- Copyright -->
 
+
+  <footer class="footer">
+  <!-- Copyright -->
+  <div class="container">
+  <h6>Designed and developed by Mariem Khlifi</h6>
+  </div>
+  <!-- Copyright -->
   </footer>
+
+  <script type="text/javascript" > 
+    var lines=["https://www.youtube.com/embed/l8W6c5Fh3oA",
+    "https://www.youtube.com/embed/pPKx-fon1nY",
+    "https://www.youtube.com/embed/My4j3vgFxbE",
+    "https://www.youtube.com/embed/q9h55mdF4lw",
+    "https://www.youtube.com/embed/R7vH28D-ew0",
+    "https://www.youtube.com/embed/N5fZDd9wL-c",
+    "https://www.youtube.com/embed/mSnJJv_cBDw",
+    "https://www.youtube.com/embed/tTUZswZHsWQ",
+    "https://www.youtube.com/embed/Z9IODJdi3GA",
+    "https://www.youtube.com/embed/TNRCvG9YtYI",
+    "https://www.youtube.com/embed/oYWklAV_cwQ",
+    "https://www.youtube.com/embed/3c3XFh_u6vE",
+    "https://www.youtube.com/embed/C3lWwBslWqg",
+    "https://www.youtube.com/embed/GKlpL4FhzUs",
+    "https://www.youtube.com/embed/HzpCcNdhy5w",
+    "https://www.youtube.com/embed/4XO37QAlsYo",
+    "https://www.youtube.com/embed/FQ3slUz7Jo8",
+    "https://www.youtube.com/embed/yjoPWxmOCtc",
+    "https://www.youtube.com/embed/HrE5lrjBryI",
+    "https://www.youtube.com/embed/BbWBRnDK_AE",
+    "https://www.youtube.com/embed/eEMTzZwg_lA",
+    "https://www.youtube.com/embed/hi4pzKvuEQM",
+    "https://www.youtube.com/embed/VlbaJA7aO9M",
+    "https://www.youtube.com/embed/q-ipH9Ws-zs"];
+    
+    
+    var n = new Date();
+    var d = n.getHours();
+    document.querySelector('iframe').src = lines[d];
+                
+    </script>
+
 </body>
 
 </html>
