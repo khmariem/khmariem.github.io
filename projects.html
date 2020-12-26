@@ -10,10 +10,19 @@
 
   <script src="./js/bootstrap.min.js"></script>
   <script>
-    function show(){
-      document.getElementById('1').style.display ="none";
-      document.getElementById('dis').style.display ="block";
-
+    function show(x){
+      var i;
+      for(i=0;i<8;i++) {
+        document.getElementById(i.toString()).style.display ="none";
+      }
+      document.getElementById('dis'+x).style.display ="block";
+    }
+    function hide(x){
+      document.getElementById('dis'+x).style.display ="none";
+      var i;
+      for(i=0;i<8;i++) {
+        document.getElementById(i.toString()).style.display ="block";
+      }
     }
   </script>
 
@@ -33,9 +42,8 @@
       }
       
       .card{
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        width: 40%;
+        width: 100%;
       }
 
       .card:hover{
@@ -43,8 +51,10 @@
       }
 
       .container{
-        padding: 2px 16px;
+        padding: 20px 16px;
       }
+
+
   </style>
 </head>
 
@@ -123,20 +133,35 @@ journey started in France.</pre>
 
 	  </div>
     </div>
-
-    <div class="col-sm-7 col-md-7 col-lg-7"> 
-      <div id="1" onClick="show();" class="card">
-        <a href="#">
-          <img src="imgs/fantom.jpg" style="width:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">AR experience in the airports.</p>
-        </div>
+    <div class="col-sm-3 col-md-3 col-lg-3 "> 
+      <h1>List of projects:</h1>
+      <div id="dis5" style="display: none;">
+        <h1>See with your Ears</h1> 
+        <a href="" onClick="hide('5');">back</a>
       </div>
-      
-      <div id="dis" style="display: none;">
+      <div id="dis4" style="display: none;">
+        <h1>Disparity Maps</h1> 
+        <a href="" onClick="hide('4');">back</a>
+      </div>
+      <div id="dis0" style="display: none;">
+        <h1>Humanoid RoboCup</h1>  
+        <a href="" onClick="hide('0');">back</a>
+      </div>
+      <div id="dis2" style="display: none;">
+        <h1>Reinforcement Learning for Robotic Penalty Kicks</h1> 
+        <a href="" onClick="hide('2');">back</a>
+      </div>
+      <div id="dis7" style="display: none;">
+        <h1>Impact of governmental measures due to Covid-19 on GHG emissions</h1> 
+        <a href="" onClick="hide('7');">back</a>
+      </div>
+      <div id="dis3" style="display: none;">
+        <h1>MNISTerov</h1>  
+        <a href="" onClick="hide('3');">back</a>
+      </div>
+      <div id="dis1" style="display: none;">
         <h1>Fantom Gaze</h1>  
+        <a href="" onClick="hide('4');">back</a>
         <p class="text_p" align="justify" style="font-size: 20px;">
           As part of our participation in <a href="https://projects-paxtechhack.bemyapp.com/#/event">PaxTechHack</a> in Hamburg during the Aircraft Interior Expo, we created Fantom Gaze, a pair of smart glasses that 
           provide an Augmented-Reality experience to the travellers who don't have time to fully browse the shops before heading to the boarding gate.         
@@ -148,8 +173,95 @@ journey started in France.</pre>
           <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fantom Gaze provide an opportunity for retailers to create amazing ads that will  be an unforgettable experience for the airport guests and provide opportunities to increase sales <a href="https://twitter.com/hashtag/PaxTechHack?src=hash&amp;ref_src=twsrc%5Etfw">#PaxTechHack</a> <a href="https://twitter.com/hashtag/PTS2019?src=hash&amp;ref_src=twsrc%5Etfw">#PTS2019</a> <a href="https://twitter.com/PaxTechSolution?ref_src=twsrc%5Etfw">@PaxTechSolution</a> <a href="https://t.co/ozoOi4DRnq">pic.twitter.com/ozoOi4DRnq</a></p>&mdash; BeMyApp Germany (@BeMyAppGermany) <a href="https://twitter.com/BeMyAppGermany/status/1113780273802567681?ref_src=twsrc%5Etfw">April 4, 2019</a></blockquote>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
+      <div id="dis6" style="display: none;">
+        <h1>Mobility App: Old Plow</h1> 
+        <a href="" onClick="hide('6');">back</a>
+      </div>
+      <br/>
+      <div id="5" onClick="show('5');" class="card">
+        <a href="#">
+          <img src="imgs/eyes.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">See with your Ears</p>
+        </div>
+      </div>
+      <br/>
+      <div id="4" onClick="show('4');" class="card">
+        <a href="#">
+          <img src="imgs/depth.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Disparity Maps</p>
+        </div>
+      </div>
+      <br/>
+      <div id="0" onClick="show('0');" class="card">
+        <a href="#">
+          <img src="imgs/nao_walk.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Humanoid RoboCup</p>
+        </div>
+      </div>
+      <br/>
+      <div id="2" onClick="show('2');" class="card">
+        <a href="#">
+          <img src="imgs/penalty_kicks.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Reinforcement Learning for Robotic Penalty Kicks</p>
+        </div>
+      </div>
+      <br/>
+      <div id="7" onClick="show('7');" class="card">
+        <a href="#">
+          <img src="imgs/mockup4.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Impact of governmental measures due to Covid-19 on GHG emissions</p>
+        </div>
+      </div>
+      <br/>
+      <div id="3" onClick="show('3');" class="card">
+        <a href="#">
+          <img src="imgs/nest.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">MNISTerov</p>
+        </div>
+      </div>
+      <br/>
+      <div id="1" onClick="show('1');" class="card">
+        <a href="#">
+          <img src="imgs/fantom.jpg" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">AR experience in the airports</p>
+        </div>
+      </div>
+      <br/>
+      <div id="6" onClick="show('6');" class="card">
+        <a href="#">
+          <img src="imgs/plow.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Mobility App: Old Plow</p>
+        </div>
+      </div>
+      <br/>
+      </div>    
     </div>
-<div class="space"></div>
+  <div class="space"></div>
+  <br/>
   <footer class="footer">
 
   <!-- Copyright -->
