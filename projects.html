@@ -13,7 +13,7 @@
     function show(x){
       document.getElementById("header").style.display ="none";
       var i;
-      for(i=0;i<8;i++) {
+      for(i=0;i<9;i++) {
         document.getElementById(i.toString()).style.display ="none";
       }
       document.getElementById('dis'+x).style.display ="block";
@@ -22,7 +22,7 @@
       document.getElementById("header").style.display ="block";
       document.getElementById('dis'+x).style.display ="none";
       var i;
-      for(i=0;i<8;i++) {
+      for(i=0;i<9;i++) {
         document.getElementById(i.toString()).style.display ="block";
       }
     }
@@ -144,6 +144,16 @@ journey started in France.</pre>
     </div>
     <div class="col-sm-3 col-md-3 col-lg-3 "> 
       <h1 id="header" style="display: block;">List of projects:</h1>
+	<div id="8" onClick="show('8');" class="card">
+        <a href="#">
+          <img src="imgs/11.png" style="width:100%;height:100%;">
+          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+        </a>
+        <div class="container">
+          <p class="text_p">Manifolds in Euclidean Spaces</p>
+        </div>
+      </div>
+      <br/>
       <div id="dis5" style="display: none;">
         <h1 style="color:#ffa500;padding: 10px;">See with your Ears</h1> 
         <div>
@@ -191,6 +201,11 @@ journey started in France.</pre>
         <h1 style="color:#ffa500;padding: 10px;">MNISTerov</h1> 
         <p class="p2">Check out the work <a href="files/Nesterov.pdf">here</a>.</p>
         <a href="" text-align="right" onClick="hide('3');"><- back</a>
+      </div>
+      <div id="dis8" style="display: none;">
+        <h1 style="color:#ffa500;padding: 10px;">Manifolds in Euclidean Spaces (Notes)</h1> 
+        <p class="p2">Check out the notes <a href="files/Manifolds.pdf">here</a>.</p>
+        <a href="" text-align="right" onClick="hide('8');"><- back</a>
       </div>
       <div id="dis1" style="display: none;">
         <h1 style="color:#ffa500;padding: 10px;">Fantom Gaze</h1>  
@@ -260,16 +275,6 @@ journey started in France.</pre>
         </a>
         <div class="container">
           <p class="text_p">Impact of governmental measures due to Covid-19 on GHG emissions</p>
-        </div>
-      </div>
-      <br/>
-      <div id="3" onClick="show('3');" class="card">
-        <a href="#">
-          <img src="imgs/nest.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">MNISTerov</p>
         </div>
       </div>
       <br/>
