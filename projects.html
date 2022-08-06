@@ -13,7 +13,7 @@
     function show(x){
       document.getElementById("header").style.display ="none";
       var i;
-      for(i=0;i<9;i++) {
+      for(i=0;i<10;i++) {
         document.getElementById(i.toString()).style.display ="none";
       }
       document.getElementById('dis'+x).style.display ="block";
@@ -22,7 +22,7 @@
       document.getElementById("header").style.display ="block";
       document.getElementById('dis'+x).style.display ="none";
       var i;
-      for(i=0;i<9;i++) {
+      for(i=0;i<10;i++) {
         document.getElementById(i.toString()).style.display ="block";
       }
     }
@@ -134,204 +134,204 @@ journey started in France.</pre>
 	  </div>
     </div>
     <div class="col-sm-3 col-md-3 col-lg-3 "> 
-      <h1 id="header" style="display: block;">List of projects:</h1>
-	<div id="8" onClick="show('8');" class="card">
-        <a href="#">
-          <img src="imgs/11.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Manifolds in Euclidean Spaces</p>
-        </div>
-      </div>
-      <br/>
-	<div id="3" onClick="show('3');" class="card">
-        <a href="#">
-          <img src="imgs/nest.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">MNISTerov</p>
-        </div>
-      </div>
-      <br/>
-      <div id="dis5" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">See with your Ears</h1> 
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/kO5h98FGn2E" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-          <a href="" style="text-align:right;" onClick="hide('5');"><- back</a>
-        </div>
-      </div>
-      <div id="dis4" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Disparity Maps</h1> 
-        <p class="p2">Check the work on <a href="https://github.com/khmariem/disparity_map">github.</a></p>
-        <p class="p2">Here are a few examples:</p>
-        <img class="img-me" src="imgs/depth1.jpeg" style="width:100%;height:100%;">
-        <img class="img-me" src="imgs/depth2.jpeg" style="width:100%;height:100%;">
-        <a href="" text-align="right" onClick="hide('4');"><- back</a>
-      </div>
-      <div id="dis0" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Humanoid RoboCup</h1> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz1UlfMGW3w" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a href="" text-align="right" onClick="hide('0');"><- back</a>
-      </div>
-      <div id="dis2" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Reinforcement Learning for Robotic Penalty Kicks</h1> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XIeHO00lQ9g" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a href="" text-align="right" onClick="hide('2');"><- back</a>
-      </div>
-      <div id="dis7" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Impact of governmental measures due to Covid-19 on GHG emissions</h1> 
-        <p class="p2">This is a machine Learning project where predictions are given from a website that we created.</p>
-        <p class="p2">Below you will find screenshots from our website in action when hosted on a local server.</p>
-        <h3>Step 1: access home page</h3>
-        <img class="img-me" src="imgs/mockup1.png" style="width:900px;height:400px;">
-        <h3>Step 2: Choose country</h3>
-        <img class="img-me" src="imgs/mockup2.png" style="width:900px;height:400px;">
-        <h3>Step 3: Enter values</h3>
-        <img class="img-me" src="imgs/mockup3.png" style="width:900px;height:400px;">
-        <h3>Step 4: Obtain results from Model</h3>
-        <img class="img-me" src="imgs/mockup4.png" style="width:900px;height:400px;">
-        <a href="" text-align="right" onClick="hide('7');"><- back</a>
-      </div>
-      <div id="dis9" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Reaction-Diffusion on Meshes</h1> 
-        <p class="p2">You can check the project on <a href="https://github.com/khmariem/growing-shapes-reaction-diffusion">Github</a></p>
+    <h1 id="header" style="display: block;">List of projects:</h1>
+    <div id="dis9" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Reaction-Diffusion on Meshes</h1> 
+      <p class="p2">You can check the project on <a href="https://github.com/khmariem/growing-shapes-reaction-diffusion">Github</a></p>
 
-        <img class="img-me" src="imgs/turing.jpg" style="width:900px;height:400px;">
+      <img class="img-me" src="imgs/turing.jpg" style="width:250px;">
 
-        <img class="img-me" src="imgs/spoton.jpg" style="width:900px;height:400px;">
+      <img class="img-me" src="imgs/spoton.jpg" style="width:250px;">
 
-        <img class="img-me" src="imgs/stripesspots.jpg" style="width:900px;height:400px;">
+      <img class="img-me" src="imgs/stripesspots.jpg" style="width:250px;">
 
-        <a href="" text-align="right" onClick="hide('9');"><- back</a>
-      </div>
-      <div id="dis3" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">MNISTerov</h1> 
-        <p class="p2">Check out the work <a href="files/Nesterov.pdf">here</a>.</p>
-        <a href="" text-align="right" onClick="hide('3');"><- back</a>
-      </div>
-      <div id="dis8" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Manifolds in Euclidean Spaces (Notes)</h1> 
-        <p class="p2">These are the notes for the lecture that I have given during a seminar about Morse Theory. Check out the notes <a href="files/Manifolds.pdf">here</a>.</p>
-        <a href="" text-align="right" onClick="hide('8');"><- back</a>
-      </div>
-      <div id="dis1" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Fantom Gaze</h1>  
-        <p class="text_p;p2" align="justify" style="font-size: 20px;">
-          As part of our participation in <a href="https://projects-paxtechhack.bemyapp.com/#/event">PaxTechHack</a> in Hamburg during the Aircraft Interior Expo, we created Fantom Gaze, a pair of smart glasses that 
-          provide an Augmented-Reality experience to the travellers who don't have time to fully browse the shops before heading to the boarding gate.         
-        </p>
-        <p class="text_p;p2" align="justify" style="font-size: 20px;">
-          Try it <a href="https://khmariem.github.io/assets/app.html">here</a>! 
-          You should however dispose of the codes that will trigger the AR-events.
-        </p>
-        <a href="" text-align="right" onClick="hide('1');"><- back</a>
-      </div>
-      <div id="dis6" style="display: none;">
-        <h1 style="color:#ffa500;padding: 10px;">Mobility App: Old Plow</h1> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/B5tW3l8zibU" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/tfp-vBiK6No" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a href="" text-align="right" onClick="hide('6');"><- back</a>
-      </div>
-      <br/>
-      <div id="5" onClick="show('5');" class="card">
-        <a href="#">
-          <img src="imgs/eyes.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">See with your Ears</p>
-        </div>
-      </div>
-      <br/>
-      <div id="9" onClick="show('9');" class="card">
-        <a href="#">
-          <img src="imgs/turing.jpg" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Reaction-Diffusion on 3D Meshes</p>
-        </div>
-      </div>
-      <br/>
-      <div id="4" onClick="show('4');" class="card">
-        <a href="#">
-          <img src="imgs/depth.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Disparity Maps</p>
-        </div>
-      </div>
-      <br/>
-      <div id="0" onClick="show('0');" class="card">
-        <a href="#">
-          <img src="imgs/nao_walk.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Humanoid RoboCup</p>
-        </div>
-      </div>
-      <br/>
-      <div id="2" onClick="show('2');" class="card">
-        <a href="#">
-          <img src="imgs/penalty_kicks.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Reinforcement Learning for Robotic Penalty Kicks</p>
-        </div>
-      </div>
-      <br/>
-      <div id="7" onClick="show('7');" class="card">
-        <a href="#">
-          <img src="imgs/mockup4.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Impact of governmental measures due to Covid-19 on GHG emissions</p>
-        </div>
-      </div>
-      <br/>
-      <div id="1" onClick="show('1');" class="card">
-        <a href="#">
-          <img src="imgs/fantom.jpg" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">AR experience in the airports</p>
-        </div>
-      </div>
-      <br/>
-      <div id="6" onClick="show('6');" class="card">
-        <a href="#">
-          <img src="imgs/plow.png" style="width:100%;height:100%;">
-          <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
-        </a>
-        <div class="container">
-          <p class="text_p">Mobility App: Old Plow</p>
-        </div>
-      </div>
-      <br/>
-      </div>    
+      <a href="" text-align="right" onClick="hide('9');"><- back</a>
     </div>
+    <div id="8" onClick="show('8');" class="card">
+      <a href="#">
+        <img src="imgs/11.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Manifolds in Euclidean Spaces</p>
+      </div>
+    </div>
+    <br/>
+    <div id="3" onClick="show('3');" class="card">
+      <a href="#">
+        <img src="imgs/nest.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">MNISTerov</p>
+      </div>
+    </div>
+    <br/>
+    <div id="dis5" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">See with your Ears</h1> 
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kO5h98FGn2E" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <a href="" style="text-align:right;" onClick="hide('5');"><- back</a>
+      </div>
+    </div>
+    <div id="dis4" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Disparity Maps</h1> 
+      <p class="p2">Check the work on <a href="https://github.com/khmariem/disparity_map">github.</a></p>
+      <p class="p2">Here are a few examples:</p>
+      <img class="img-me" src="imgs/depth1.jpeg" style="width:100%;height:100%;">
+      <img class="img-me" src="imgs/depth2.jpeg" style="width:100%;height:100%;">
+      <a href="" text-align="right" onClick="hide('4');"><- back</a>
+    </div>
+    <div id="dis0" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Humanoid RoboCup</h1> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz1UlfMGW3w" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="" text-align="right" onClick="hide('0');"><- back</a>
+    </div>
+    <div id="dis2" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Reinforcement Learning for Robotic Penalty Kicks</h1> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XIeHO00lQ9g" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="" text-align="right" onClick="hide('2');"><- back</a>
+    </div>
+    <div id="dis7" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Impact of governmental measures due to Covid-19 on GHG emissions</h1> 
+      <p class="p2">This is a machine Learning project where predictions are given from a website that we created.</p>
+      <p class="p2">Below you will find screenshots from our website in action when hosted on a local server.</p>
+      <h3>Step 1: access home page</h3>
+      <img class="img-me" src="imgs/mockup1.png" style="width:900px;height:400px;">
+      <h3>Step 2: Choose country</h3>
+      <img class="img-me" src="imgs/mockup2.png" style="width:900px;height:400px;">
+      <h3>Step 3: Enter values</h3>
+      <img class="img-me" src="imgs/mockup3.png" style="width:900px;height:400px;">
+      <h3>Step 4: Obtain results from Model</h3>
+      <img class="img-me" src="imgs/mockup4.png" style="width:900px;height:400px;">
+      <a href="" text-align="right" onClick="hide('7');"><- back</a>
+    </div>
+    <div id="dis3" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">MNISTerov</h1> 
+      <p class="p2">Check out the work <a href="files/Nesterov.pdf">here</a>.</p>
+      <a href="" text-align="right" onClick="hide('3');"><- back</a>
+    </div>
+    <div id="dis8" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Manifolds in Euclidean Spaces (Notes)</h1> 
+      <p class="p2">These are the notes for the lecture that I have given during a seminar about Morse Theory. Check out the notes <a href="files/Manifolds.pdf">here</a>.</p>
+      <a href="" text-align="right" onClick="hide('8');"><- back</a>
+    </div>
+    <div id="dis1" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Fantom Gaze</h1>  
+      <p class="text_p;p2" align="justify" style="font-size: 20px;">
+        As part of our participation in <a href="https://projects-paxtechhack.bemyapp.com/#/event">PaxTechHack</a> in Hamburg during the Aircraft Interior Expo, we created Fantom Gaze, a pair of smart glasses that 
+        provide an Augmented-Reality experience to the travellers who don't have time to fully browse the shops before heading to the boarding gate.         
+      </p>
+      <p class="text_p;p2" align="justify" style="font-size: 20px;">
+        Try it <a href="https://khmariem.github.io/assets/app.html">here</a>! 
+        You should however dispose of the codes that will trigger the AR-events.
+      </p>
+      <a href="" text-align="right" onClick="hide('1');"><- back</a>
+    </div>
+    <div id="dis6" style="display: none;">
+      <h1 style="color:#ffa500;padding: 10px;">Mobility App: Old Plow</h1> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/B5tW3l8zibU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tfp-vBiK6No" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="" text-align="right" onClick="hide('6');"><- back</a>
+    </div>
+    <br/>
+    <div id="5" onClick="show('5');" class="card">
+      <a href="#">
+        <img src="imgs/eyes.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">See with your Ears</p>
+      </div>
+    </div>
+    <br/>
+    <div id="9" onClick="show('9');" class="card">
+      <a href="#">
+        <img src="imgs/turing.jpg" style="width:60%;height:60%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Reaction-Diffusion on 3D Meshes</p>
+      </div>
+    </div>
+    <br/>
+    <div id="4" onClick="show('4');" class="card">
+      <a href="#">
+        <img src="imgs/depth.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Disparity Maps</p>
+      </div>
+    </div>
+    <br/>
+    <div id="0" onClick="show('0');" class="card">
+      <a href="#">
+        <img src="imgs/nao_walk.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Humanoid RoboCup</p>
+      </div>
+    </div>
+    <br/>
+    <div id="2" onClick="show('2');" class="card">
+      <a href="#">
+        <img src="imgs/penalty_kicks.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Reinforcement Learning for Robotic Penalty Kicks</p>
+      </div>
+    </div>
+    <br/>
+    <div id="7" onClick="show('7');" class="card">
+      <a href="#">
+        <img src="imgs/mockup4.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Impact of governmental measures due to Covid-19 on GHG emissions</p>
+      </div>
+    </div>
+    <br/>
+    <div id="1" onClick="show('1');" class="card">
+      <a href="#">
+        <img src="imgs/fantom.jpg" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">AR experience in the airports</p>
+      </div>
+    </div>
+    <br/>
+    <div id="6" onClick="show('6');" class="card">
+      <a href="#">
+        <img src="imgs/plow.png" style="width:100%;height:100%;">
+        <div class="container" style="padding-top:10px;padding-bottom:10px;"></div>
+      </a>
+      <div class="container">
+        <p class="text_p">Mobility App: Old Plow</p>
+      </div>
+    </div>
+    <br/>
+    </div>    
+  </div>
   <div class="space"></div>
   <br/>
   <footer class="footer">
 
-  <!-- Copyright -->
-  <div class="container">
-  <h6>Designed and developed by Mariem Khlifi</h6>
-  </div>
-  <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="container">
+    <h6>Designed and developed by Mariem Khlifi</h6>
+    </div>
+    <!-- Copyright -->
   </footer>
 </body>
 
